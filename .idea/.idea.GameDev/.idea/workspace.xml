@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../GameDevGeneral/Erdem/Assets/Scripts/Controllers/CollectController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,7 +67,9 @@
       <option name="presentableId" value="Default" />
       <updated>1657696122422</updated>
       <workItem from="1657696134141" duration="547000" />
-      <workItem from="1657708737489" duration="8270000" />
+      <workItem from="1657708737489" duration="9177000" />
+      <workItem from="1657719951055" duration="2030000" />
+      <workItem from="1657724560631" duration="2938000" />
     </task>
     <servers />
   </component>

@@ -355,7 +355,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad68a21bb16f483788ff0d5eb043c17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Colleted: []
+  stackManager: {fileID: 4511119751227750141}
+  Colleted:
+  - {fileID: 1986782416849583140}
 --- !u!1 &1335653798374692270
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,10 +592,10 @@ GameObject:
   - component: {fileID: 2565369728319362221}
   - component: {fileID: 5986540933328426660}
   - component: {fileID: 2239945708351134173}
-  - component: {fileID: 7214251951080280691}
+  - component: {fileID: 3104636506575028449}
   m_Layer: 0
   m_Name: Money (4)
-  m_TagString: Collectable
+  m_TagString: Collected
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -633,7 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollectableData:
-    CollectableType: 0
+    CollectableType: 1
 --- !u!23 &2565369728319362221
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -686,8 +688,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 0.75, z: 0.75}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5, y: 1.5885197, z: 4.334843}
+  m_Center: {x: 0, y: 0.10833746, z: -1.29198}
 --- !u!114 &2239945708351134173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,7 +704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectableManager: {fileID: 4208933894243707571}
   stackManager: {fileID: 4511119751227750141}
---- !u!114 &7214251951080280691
+  StackManagerGameObject: {fileID: 1275601196466846799}
+--- !u!114 &3104636506575028449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -714,7 +717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f48acf145ac491e9001eca397a8ea97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stackManager: {fileID: 4511119751227750141}
 --- !u!1 &1999336899004103110
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,10 +3121,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3167,10 +3165,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (4)
@@ -3189,10 +3195,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -3237,10 +3239,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (9)
@@ -3259,10 +3269,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3307,10 +3313,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (6)
@@ -3329,10 +3343,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3347,7 +3357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 51.38
+      value: 49.14
       objectReference: {fileID: 0}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3377,10 +3387,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (5)
@@ -3399,10 +3417,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3451,6 +3465,10 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money
@@ -3469,10 +3487,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3517,10 +3531,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (10)
@@ -3539,10 +3561,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3587,10 +3605,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (1)
@@ -3609,10 +3635,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3657,10 +3679,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (3)
@@ -3679,10 +3709,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3727,10 +3753,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (8)
@@ -3749,10 +3783,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3767,7 +3797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 51.38
+      value: 54.95
       objectReference: {fileID: 0}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3797,10 +3827,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (7)
@@ -3885,10 +3923,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 943822836673131111}
     m_Modifications:
-    - target: {fileID: 264125574411432377, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: stackManager
-      value: 
-      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3933,10 +3967,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8103928703764389308, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: stackManager
+      value: 
+      objectReference: {fileID: 4511119751227750141}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: StackManagerGameObject
+      value: 
+      objectReference: {fileID: 1275601196466846799}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
       value: Money (2)

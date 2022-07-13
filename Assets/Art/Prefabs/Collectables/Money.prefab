@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4912988553562601319}
   - component: {fileID: 3792031302770554222}
   - component: {fileID: 8692393558944168471}
-  - component: {fileID: 264125574411432377}
+  - component: {fileID: 8103928703764389308}
   m_Layer: 0
   m_Name: Money
   m_TagString: Collectable
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollectableData:
-    CollectableType: 0
+    CollectableType: 1
 --- !u!23 &4912988553562601319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -126,7 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectableManager: {fileID: 6763654787223505273}
   stackManager: {fileID: 0}
---- !u!114 &264125574411432377
+  StackManagerGameObject: {fileID: 0}
+--- !u!114 &8103928703764389308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,4 +139,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f48acf145ac491e9001eca397a8ea97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stackManager: {fileID: 0}
