@@ -17,14 +17,22 @@ namespace Controllers
         #endregion
         private void OnTriggerEnter(Collider other)
         { 
-            if(other.gameObject.CompareTag("Collectable"))
+            if(other.CompareTag("Collectable"))
             {
+                CollectableSignals.Instance.onMoneyCollection?.Invoke();
                 other.transform.parent=stackManager.transform;
                 other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
                 other.gameObject.GetComponent<Collider>().isTrigger = true;
                 other.tag ="Collected";
                 stackManager.Colleted.Add(other.gameObject);
             }
+
+            //  if (other.CompareTag("Obstacle"))
+          //  {
+          //      CollectableSignals.Instance.onObstacleCollision?.Invoke();
+          //      other.tag ="Collectable";
+          //      
+          //  }
         }
     }
 }

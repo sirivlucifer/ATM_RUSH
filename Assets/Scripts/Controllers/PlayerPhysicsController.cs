@@ -19,8 +19,6 @@ namespace Controllers
         #region Serialized Variables
         
         [SerializeField] private PlayerManager playerManager;
-        private new Collider Collider;
-
         #endregion
 
         #endregion

@@ -22,7 +22,6 @@ namespace Managers
                 }
                 private void SubscribeEvents()
                 {
-                    CollectableSignals.Instance.onMoneyCollection += OnMoneyCollection;
                     CollectableSignals.Instance.onObstacleCollision += OnObstacleCollision;
                     CollectableSignals.Instance.onUpgradeMOney += OnUpgradeMoney;
                     CollectableSignals.Instance.onChangeState += OnChangeState;
@@ -30,8 +29,7 @@ namespace Managers
                 }
         
                 private void UnsubscribeEvents()
-                { 
-                    CollectableSignals.Instance.onMoneyCollection -= OnMoneyCollection;
+                {
                     CollectableSignals.Instance.onObstacleCollision -= OnObstacleCollision;
                     CollectableSignals.Instance.onUpgradeMOney -= OnUpgradeMoney;
                     CollectableSignals.Instance.onChangeState -= OnChangeState;
@@ -44,11 +42,7 @@ namespace Managers
                 } 
 
         #endregion
-       
-        private void OnMoneyCollection()
-        {
-           // CollectablePhysicsController.
-        }
+        
         private void OnObstacleCollision()
         {
             // Fizik controlden Para yok olacak 
