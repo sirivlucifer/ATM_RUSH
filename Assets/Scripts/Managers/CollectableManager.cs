@@ -1,19 +1,10 @@
-﻿using Controllers;
-using Data.UnityObject;
-using Data.ValueObject;
-using Enums;
-using Signals;
+﻿using Signals;
 using UnityEngine;
 
 namespace Managers
 {
     public class CollectableManager : MonoBehaviour
     {
-
-        public CollectableData CollectableData;
-      //  public CollectablePhysicsController CollectablePhysicsController;
-
-        
         #region Event Subscription
 
                 private void OnEnable()

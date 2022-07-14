@@ -30,10 +30,7 @@ namespace Managers
         } 
         private void Update()
         {
-            if (isCollected)
-            {
-                PullCollectedToStack();
-            }
+            PullCollectedToStack();
         }
         #endregion
         
@@ -41,18 +38,25 @@ namespace Managers
         {
             isCollected = true;
         }
+
         void PullCollectedToStack()
         {
-            if (Colleted.Count > 1)
+            if(!isCollected) return;
             {
-                for (int i = 1; i < Colleted.Count; i++)
-                {
-                    var FirstCurrency = Colleted.ElementAt(i - 1);
-                    var SecondCurrency = Colleted.ElementAt(i);
-                    // var position = SecondCurrency.transform.position;
-                    SecondCurrency.transform.position = new Vector3(Mathf.Lerp(SecondCurrency.transform.position.x,FirstCurrency.transform.position.x,15 * Time.deltaTime)
-                        ,SecondCurrency.transform.position.y,Mathf.Lerp(SecondCurrency.transform.position.z,FirstCurrency.transform.position.z + 1.5f,15 * Time.deltaTime));
-                }
+                 if (Colleted.Count > 1)
+                 {
+                     for (int i = 1; i < Colleted.Count; i++)
+                     {
+                         var FirstCollectable = Colleted.ElementAt(i - 1);
+                         var SecondCollectable = Colleted.ElementAt(i);
+                         
+                         var FollowerPosition = SecondCollectable.transform.position;
+                         var TargetPosition = FirstCollectable.transform.position;
+                        
+                         SecondCollectable.transform.position = new Vector3(Mathf.Lerp(FollowerPosition.x,TargetPosition.x,15 * Time.deltaTime)
+                             ,FollowerPosition.y,Mathf.Lerp(FollowerPosition.z,TargetPosition.z + 1.5f,15 * Time.deltaTime));
+                     }
+                 }
             }
         }
     }
