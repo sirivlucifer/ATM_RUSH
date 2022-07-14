@@ -38,7 +38,6 @@ namespace Managers
         {
             isCollected = true;
         }
-
         void PullCollectedToStack()
         {
             if(!isCollected) return;
@@ -47,14 +46,14 @@ namespace Managers
                  {
                      for (int i = 1; i < Colleted.Count; i++)
                      {
-                         var FirstCollectable = Colleted.ElementAt(i - 1);
+                         var FirstCollectable = Colleted.ElementAt(i-1);
                          var SecondCollectable = Colleted.ElementAt(i);
-                         
                          var FollowerPosition = SecondCollectable.transform.position;
                          var TargetPosition = FirstCollectable.transform.position;
-                        
-                         SecondCollectable.transform.position = new Vector3(Mathf.Lerp(FollowerPosition.x,TargetPosition.x,15 * Time.deltaTime)
+                         var LerpVector = new Vector3(Mathf.Lerp(FollowerPosition.x,TargetPosition.x,15 * Time.deltaTime)
                              ,FollowerPosition.y,Mathf.Lerp(FollowerPosition.z,TargetPosition.z + 1.5f,15 * Time.deltaTime));
+                         
+                         SecondCollectable.transform.position = LerpVector;
                      }
                  }
             }
