@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
-    StageList: []
+    AtmList: []
   levelHolder: {fileID: 1939349186}
   levelLoader: {fileID: 1623889793}
   levelClearer: {fileID: 1623889792}

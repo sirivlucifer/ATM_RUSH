@@ -20,7 +20,7 @@ namespace Controllers
         
         #endregion
         #region Private Variables
-        private float waitTime = 0.3f;
+        private float _waitTime = 0.3f;
         
         #endregion
         #endregion
@@ -37,7 +37,12 @@ namespace Controllers
                 other.tag ="Collected";
                 stackManager.Colleted.Add(other.gameObject); 
                 SetMoney();
-            }                                                
+               
+              
+
+                
+            }
+            
         }
         
         public void SetMoney()
@@ -52,6 +57,7 @@ namespace Controllers
                 return;
             }
         }
+        
        
     }
 }

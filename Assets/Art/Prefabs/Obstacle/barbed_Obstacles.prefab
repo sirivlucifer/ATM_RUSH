@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3086895891505546301}
   - component: {fileID: 6689853478461242301}
   - component: {fileID: 5442194816103192312}
+  - component: {fileID: 7758234024036623103}
   m_Layer: 0
   m_Name: barbed_Obstacles
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7758234024036623103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8105475101727699317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 0.41990554, z: 0.59999996}
+  m_Center: {x: 0, y: 0.15653, z: 0}

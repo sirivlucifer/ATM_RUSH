@@ -9,8 +9,11 @@ namespace Managers
 { 
     public class StackManager : MonoSingleton<StackManager>
     {
+       
+        
         public List<GameObject> Colleted = new List<GameObject>();
         private bool isCollected;
+
         
         private void OnEnable()
         {
