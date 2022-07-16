@@ -44,7 +44,6 @@ namespace Managers
                 } 
 
         #endregion
-       
         private void OnMoneyCollection()
         {
            // CollectablePhysicsController.
@@ -55,7 +54,7 @@ namespace Managers
         }
         private void OnUpgradeMoney()
         {
-            // Fizk controlden Paralar dönüşecek
+          UpgradeMoney();
         }
 
         private void OnChangeState()
@@ -65,6 +64,17 @@ namespace Managers
         private void OnDeposit()
         {
             // Para yok olacak, atmye yatacak
+        } 
+        void UpgradeMoney()
+        {
+            if (CollectableData.CollectableType == CollectableType.Money)
+            {
+                gameObject.GetComponent<CollectableManager>().CollectableData.CollectableType = CollectableType.Gold;
+            }
+            if (CollectableData.CollectableType == CollectableType.Gold)
+            {
+                CollectableData.CollectableType = CollectableType.Diamond;
+            }
         }
     }
 }

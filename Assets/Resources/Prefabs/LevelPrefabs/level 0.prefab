@@ -2121,6 +2121,7 @@ Transform:
   - {fileID: 3814130254323258430}
   - {fileID: 5847441891900685215}
   - {fileID: 338541963881908327}
+  - {fileID: 678761631296714796}
   m_Father: {fileID: 5726044944820656609}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2288,6 +2289,7 @@ MonoBehaviour:
   index: 0
   collectableManager: {fileID: 0}
   stackManager: {fileID: 4511119751227750141}
+  CollectableGameObject: {fileID: 6823062166640638559}
   scoreManager: {fileID: 3424718568804411768}
   pos: {x: 0, y: 0, z: 0}
 --- !u!1 &6823062166640638559
@@ -3509,20 +3511,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (12)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &4159450151189428496 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 88089506573950289}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9015920333326418623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 88089506573950289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4159450151189428496 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 88089506573950289}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &368198697633592332
@@ -3592,9 +3598,13 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (13)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -3675,20 +3685,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (14)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &4426588464127757142 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 427780315620962071}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8775766182950007033 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 427780315620962071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4426588464127757142 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 427780315620962071}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &956189224670850824
@@ -3828,20 +3842,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (9)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &3991450439592141322 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 1145561552131704395}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8341745265346402725 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 1145561552131704395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3991450439592141322 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 1145561552131704395}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1672540609079231910
@@ -3911,9 +3929,13 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (20)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -3994,20 +4016,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (23)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &7348059896806543516 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 1864352522061320050}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2404398364335614771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 1864352522061320050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7348059896806543516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 1864352522061320050}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2757930339496211218
@@ -4205,10 +4231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: Money
-      value: 
-      objectReference: {fileID: 5579189212875293761}
+    - target: {fileID: 6763654787223505273, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableData.CollectableType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: scoreManager
       value: 
@@ -4217,17 +4243,16 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &5579189212875293761 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 3552016505874717615}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &705637005373751278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -4300,20 +4325,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (4)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &668239212367715582 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 3587030424846252223}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5611975639417071441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 3587030424846252223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &668239212367715582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 3587030424846252223}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3635424720977013784
@@ -4372,10 +4401,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-      propertyPath: Money
-      value: 
-      objectReference: {fileID: 5644576808220308470}
-    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 3424718568804411768}
@@ -4383,17 +4408,16 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (21)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &5644576808220308470 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 3635424720977013784}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &788761788044970073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -4602,20 +4626,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (10)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &449551964688840254 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 4520628924564886143}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4799305827605859729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 4520628924564886143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &449551964688840254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 4520628924564886143}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4784569005454486780
@@ -4685,20 +4713,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (1)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &4485650237244207890 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 4784569005454486780}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8856211046661474493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 4784569005454486780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4485650237244207890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 4784569005454486780}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4880427279598639355
@@ -4768,20 +4800,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (3)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &4583764977277028117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 4880427279598639355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8879800971153833146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 4880427279598639355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4583764977277028117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 4880427279598639355}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5474324313593959029
@@ -4851,9 +4887,13 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (6)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -4934,9 +4974,13 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (17)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -5017,9 +5061,13 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (22)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -5100,20 +5148,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (16)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &7934263836387669782 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 6241298334738142039}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3079200946625891513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 6241298334738142039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7934263836387669782 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 6241298334738142039}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6491006802055104304
@@ -5183,20 +5235,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (8)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &7103603112173314929 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 6491006802055104304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2752472867944831198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 6491006802055104304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7103603112173314929 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 6491006802055104304}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6619172286334232585
@@ -5266,9 +5322,13 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (25)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -5349,20 +5409,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (15)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &7481466028382641514 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 6868588226109962539}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2554719319327368901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 6868588226109962539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7481466028382641514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 6868588226109962539}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6921128966341898926
@@ -5432,20 +5496,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (11)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &2029651284115238208 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 6921128966341898926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6380873961272055535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 6921128966341898926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2029651284115238208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 6921128966341898926}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7397957574107852367
@@ -5515,9 +5583,13 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (19)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
@@ -5592,14 +5664,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 602ffb11b1c982a46aa9bd18ab3c595a, type: 3}
---- !u!1 &7855669231075433557 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 355656153519927234, guid: 602ffb11b1c982a46aa9bd18ab3c595a, type: 3}
-  m_PrefabInstance: {fileID: 7632329131493634967}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6112742718952400082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4413433033823639365, guid: 602ffb11b1c982a46aa9bd18ab3c595a, type: 3}
+  m_PrefabInstance: {fileID: 7632329131493634967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7855669231075433557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 355656153519927234, guid: 602ffb11b1c982a46aa9bd18ab3c595a, type: 3}
   m_PrefabInstance: {fileID: 7632329131493634967}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7875046315757107571
@@ -5669,20 +5741,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (18)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &1256442518645532317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 7875046315757107571}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6181306804621008178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 7875046315757107571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1256442518645532317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 7875046315757107571}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8102289454581547977
@@ -5752,20 +5828,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (5)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &889199663869664295 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 8102289454581547977}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5255908004677199752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 8102289454581547977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &889199663869664295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 8102289454581547977}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8786070689957123074
@@ -5835,20 +5915,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (7)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!1 &416701211261963244 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 8786070689957123074}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4715204568404537411 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 8786070689957123074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &416701211261963244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 8786070689957123074}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8810401037601882196
@@ -5918,20 +6002,24 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (2)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
---- !u!4 &4811379591378560021 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 8810401037601882196}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &460169971811311546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 8810401037601882196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4811379591378560021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 8810401037601882196}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8983730588124160278
@@ -6001,19 +6089,97 @@ PrefabInstance:
       propertyPath: stackManager
       value: 
       objectReference: {fileID: 4511119751227750141}
+    - target: {fileID: 8692393558944168471, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+      propertyPath: CollectableGameObject
+      value: 
+      objectReference: {fileID: 6823062166640638559}
     - target: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
       propertyPath: m_Name
-      value: Money (24)
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+--- !u!1 &39002331359002360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
+  m_PrefabInstance: {fileID: 8983730588124160278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4912651420624422231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071712763256284225, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
   m_PrefabInstance: {fileID: 8983730588124160278}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &39002331359002360 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8945854437992374254, guid: c40a3ec557c98bc45b978415c759743b, type: 3}
-  m_PrefabInstance: {fileID: 8983730588124160278}
+--- !u!1001 &9094207910496681151
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5656208848294424740}
+    m_Modifications:
+    - target: {fileID: 3704349694935540582, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_Name
+      value: Development_Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704349694935540582, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_TagString
+      value: UpgradeGate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 56.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+--- !u!4 &678761631296714796 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8601435427022914707, guid: 77bacadace68a0243b1c15c476a4468a, type: 3}
+  m_PrefabInstance: {fileID: 9094207910496681151}
   m_PrefabAsset: {fileID: 0}

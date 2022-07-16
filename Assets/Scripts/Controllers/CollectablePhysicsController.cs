@@ -19,6 +19,7 @@ namespace Controllers
         #region Serialized Variables
         [SerializeField] private CollectableManager collectableManager;
         [SerializeField] private StackManager stackManager;
+        [SerializeField] private GameObject CollectableGameObject;
         [SerializeField] private ScoreManager scoreManager;
         
         #endregion
@@ -37,14 +38,19 @@ namespace Controllers
                 other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
                 other.gameObject.GetComponent<Collider>().isTrigger = true;
                 other.tag ="Collected";
-                stackManager.Collected.Add(other.gameObject); 
-               
+                stackManager.Collected.Add(other.gameObject);
+
             }        
             if (other.CompareTag("Obstacle"))
             {             
                 CollectableSignals.Instance.onObstacleCollision?.Invoke();
                 stackManager.Collected.Remove(gameObject);
-                Destroy(gameObject);
+                transform.parent = CollectableGameObject.transform;
+            }
+
+            if (other.CompareTag("UpgradeGate"))
+            {
+                CollectableSignals.Instance.onUpgradeMOney?.Invoke();
             }
         }
     }

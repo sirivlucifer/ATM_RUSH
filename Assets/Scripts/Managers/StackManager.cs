@@ -17,6 +17,8 @@ namespace Managers
         private bool isCollected;
         private bool isPickedUp;
 
+        private CollectableManager _collectableManager;
+
         private void OnEnable()
         {
             SubscribeEvents();
@@ -26,12 +28,14 @@ namespace Managers
         {
             CollectableSignals.Instance.onMoneyCollection += OnMoneyCollection;
             CollectableSignals.Instance.onObstacleCollision += OnObstacleCollision;
+            CollectableSignals.Instance.onUpgradeMOney += OnUpgradeMoney;
         }
 
         private void UnsubscribeEvents()
         {
             CollectableSignals.Instance.onMoneyCollection -= OnMoneyCollection;
             CollectableSignals.Instance.onObstacleCollision -= OnObstacleCollision;
+            CollectableSignals.Instance.onUpgradeMOney -= OnUpgradeMoney;
         }
 
         private void OnDisable()
@@ -48,6 +52,11 @@ namespace Managers
         private void OnObstacleCollision()
         {
            
+        }
+
+        void OnUpgradeMoney()
+        {
+            
         }
 
         private void Update()

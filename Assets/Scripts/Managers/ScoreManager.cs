@@ -56,6 +56,7 @@ namespace Managers
             _score -= 1;
             Debug.Log("Down"+ " " +_score);
         }
+        
     }
 }
 
