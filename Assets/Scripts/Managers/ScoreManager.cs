@@ -49,12 +49,12 @@ namespace Managers
         private void OnScoreUp()
         {
             _score += 1;
-            Debug.Log("Up"+ " " +_score);
+            //ebug.Log("Up"+ " " +_score);
         }
         public void OnScoreDown()
         {
             _score -= 1;
-            Debug.Log("Down"+ " " +_score);
+            //Debug.Log("Down"+ " " +_score);
         }
     }
 }

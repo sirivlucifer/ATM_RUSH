@@ -15,6 +15,7 @@ namespace Controllers
         [SerializeField] private StackManager stackManager;
         #region Public Variables
         
+        
         #endregion
 
         #region Serialized Variables
@@ -26,6 +27,8 @@ namespace Controllers
 
         #endregion
 
+
+
         private void OnTriggerEnter(Collider other)
         {
             if(other.CompareTag("Collectable"))
@@ -36,10 +39,13 @@ namespace Controllers
                 other.gameObject.GetComponent<Collider>().isTrigger = true;
                 other.tag ="Collected";
                 stackManager.Collected.Add(other.gameObject);
+                
             }        
             if (other.CompareTag("Obstacle"))
             {             
                 CollectableSignals.Instance.onObstacleCollision?.Invoke();
+                
+                //TODO: KARAKTERIN OBJEYE CARPINCA GERI SEKMESİ.
             }
         }
     }

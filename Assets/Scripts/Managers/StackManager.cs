@@ -47,7 +47,7 @@ namespace Managers
 
         private void OnObstacleCollision()
         {
-           
+         
         }
 
         private void Update()
@@ -65,7 +65,7 @@ namespace Managers
                     var SectBall = Collected.ElementAt(i);
 
                     SectBall.transform.DOMoveX(FirstBall.transform.position.x, 15 * Time.deltaTime);
-                    SectBall.transform.DOMoveZ(FirstBall.transform.position.z + 1.5f, 15 * Time.deltaTime);
+                    SectBall.transform.DOMoveZ(FirstBall.transform.position.z + 1f, 15 * Time.deltaTime);
                 }
             }
         }
