@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6160610340459518651}
   - component: {fileID: 5437058423576094344}
   - component: {fileID: 8827990565962967692}
+  - component: {fileID: 8435181488792989090}
+  - component: {fileID: 2732333133744214069}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -81,3 +83,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8435181488792989090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371118199620682553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3b641b90c30dc41a13996704272c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2732333133744214069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371118199620682553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0000005, y: 2, z: 0.07999992}
+  m_Center: {x: 0, y: 0, z: 0}
