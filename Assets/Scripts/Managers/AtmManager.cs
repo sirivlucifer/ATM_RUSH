@@ -8,6 +8,8 @@ namespace Managers
     public class AtmManager : MonoBehaviour
     {
         public AtmScoreController atmScoreController;
+        public int atmId;
+        public Collider Collider;
         private void OnEnable()
         {
             SubscribeEvents();
@@ -29,16 +31,18 @@ namespace Managers
         } 
         void OnDeposit(GameObject gameObject)
         {
-            AtmMoveDown();
+            AtmMoveDown(gameObject);
         }
 
-        void AtmMoveDown(){
+        void AtmMoveDown(GameObject gameObject) {
+             
+             if (gameObject.CompareTag("Player"))
+             {
+                 transform.DOMoveY(-2.5f, 2f);
+             }
             
-            atmScoreController.OnDeposit(gameObject);
-            if (gameObject.CompareTag("Player"))
-            {
-                transform.DOMoveY(transform.position.z+10f, 0.3f);
-            }
+             atmScoreController.OnDeposit(gameObject);
+           
          }
     }
 }
