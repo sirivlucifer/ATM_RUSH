@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using DG.Tweening;
 using Extentions;
 using Signals;
@@ -16,6 +17,8 @@ namespace Managers
         #region Serialized Variables
         #endregion
         #endregion
+
+        private int lastIndex;
         #region Event Subscription 
         
         private void OnEnable()
@@ -44,6 +47,7 @@ namespace Managers
         private void Update() 
         {
             StackLerpMove();
+            lastIndex = Collected.Count - 1;
         }
         private void OnMoneyCollection(GameObject other)
         {
@@ -87,8 +91,30 @@ namespace Managers
             }
         }
         
+        
+        
+        
         #endregion
         #region Stack Adding and Removing
+        
+        public void RemoveList(GameObject crashObj)
+        {
+            Collected.Remove(crashObj);
+            crashObj.tag = "Collectable";
+            GameObject bounceMoney = Instantiate(crashObj,RandomPos(transform),Quaternion.identity);
+            //  Destroy(bounceMoney.GetComponent<Rigidbody>());
+            bounceMoney.transform.DOMove(bounceMoney.transform.position - new Vector3(0, 2, 0), 1).SetEase(Ease.OutBounce);
+            Destroy(crashObj);
+        }
+        public Vector3 RandomPos(Transform obstacle)
+        {
+            float x = Random.Range(-4, 4);
+            float z = Random.Range(20, 30);
+            Vector3 position = new Vector3(x, 2, obstacle.position.z + z);
+            return position;
+        }
+        
+        
         private void AddOnStack(GameObject other)
                 {
                     other.tag = "Collected"; 
@@ -98,32 +124,41 @@ namespace Managers
                     StackLerpMove();
                     CollectableScaleUp(other);
                 }
-                private void RemoveFromStack(GameObject self) 
+        private void RemoveFromStack(GameObject self) 
+        {
+            var ChildCheck = self.transform.GetSiblingIndex();
+           // var hitItem = Collected.IndexOf(self);
+            if (self.CompareTag("Collected"))
+            {
+
+              //  Debug.Log("  Child Check" + ChildCheck);
+
+                if ( transform.childCount-1  == ChildCheck)
                 {
-                    if (self.CompareTag("Collected"))
+                    Collected.Remove(self);
+                    Destroy(self); 
+                }
+                else {
+                    // int lastIndex = self.transform.childCount - 1;
+                    // Debug.Log("last index" + lastIndex);
+                    for (int i = ChildCheck; i <= lastIndex; i++) 
                     {
-                        var ChildCheck = Collected.Count; 
-                        
-                        if ( transform.childCount == ChildCheck)
-                        {
-                            Collected.Remove(self);
-                            Destroy(self);
-                       }
-        
-                       else
-                       {
-                           
-                           int crashedObject = self.transform.GetSiblingIndex();
-                           int lastIndex = self.transform.childCount - 1;
-        
-                           for (int i = crashedObject; i <= lastIndex; i++)
-                           {
-                               self.tag = "Collectable";
-                               Collected[i].SetActive(false);
-                           }
-                       }
+                        Debug.Log(ChildCheck);
+                       RemoveList(self);
                     }
-                } 
-                #endregion
+                }
+            }
+
+            if (self.CompareTag("Player"))
+            {
+                
+               
+                
+                
+            }
+        }       
+     
+        
+        #endregion
     }
 }

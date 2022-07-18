@@ -102,7 +102,7 @@ namespace Managers
 
         private void OnObstacleCollision(GameObject self)
         {
-            movementController.PlayerPushBack(self);
+           // movementController.PlayerPushBack(self);
         }
 
         private void OnPlay()

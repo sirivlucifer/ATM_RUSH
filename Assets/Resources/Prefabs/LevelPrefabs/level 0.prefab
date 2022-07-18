@@ -4204,6 +4204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThornObstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8100928236148324203, guid: 0ef1307a9a5d9134ea2d4aa54c46b889, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef1307a9a5d9134ea2d4aa54c46b889, type: 3}
 --- !u!4 &7030885394837516685 stripped
