@@ -6,6 +6,7 @@ using Data.ValueObject;
 using Enums;
 using Signals;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Managers
 {
@@ -13,17 +14,13 @@ namespace Managers
     {
         #region Self Variables
         #region Public Variables
-        public CollectableType StateData;
+        public CollectableType TypeData;
         public GameObject money;
         public GameObject gold;
         public GameObject diamond;
-
-        public GameObject go;
-
-
         #endregion
         #region Serialized Variables
-        [SerializeField] private CollectablePhysicsController collectablePhysicsController;
+       
 
         #endregion
         #region Private Variables
@@ -61,7 +58,7 @@ namespace Managers
 
         private void Awake()
         {
-            StateData = GetCollectableStateData();
+            TypeData = GetCollectableStateData();
         }
 
         private CollectableType GetCollectableStateData() =>
@@ -70,28 +67,28 @@ namespace Managers
 
         private void OnMoneyCollection(GameObject self)
         {
-           // İndex ataması
+           
         }
         private void OnObstacleCollision(GameObject self)
         {
-            // Fizik controlden Para yok olacak 
+            
         }
         public void OnUpgradeMoney()
         {
-            OnChangeCollectableState(StateData);
+            OnChangeCollectableState(TypeData);
         }
         public void OnChangeCollectableState(CollectableType _collectableTypes)
         {
             if (_collectableTypes == CollectableType.Money)
             {
-                StateData = CollectableType.Gold;
+                TypeData = CollectableType.Gold;
                 money.SetActive(false);
                 gold.SetActive(true);
             }
         
             else if(_collectableTypes == CollectableType.Gold)
             {
-                StateData = CollectableType.Diamond;
+                TypeData = CollectableType.Diamond;
                 gold.SetActive(false);
                 diamond.SetActive(true);
             }

@@ -29,13 +29,17 @@ namespace Managers
         } 
         void OnDeposit(GameObject gameObject)
         {
-            Debug.Log("Yes");
+            AtmMoveDown();
+        }
+
+        void AtmMoveDown(){
+            
             atmScoreController.OnDeposit(gameObject);
             if (gameObject.CompareTag("Player"))
             {
                 transform.DOMoveY(transform.position.z+10f, 0.3f);
             }
-        }
+         }
     }
 }
 

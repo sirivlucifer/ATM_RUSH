@@ -12,7 +12,7 @@ public class ObstacleManager : MonoBehaviour
 
     #region Public Variables
 
-    [Header("Data")] public ObstacleType ObstacleType;
+    public ObstacleType ObstacleType;
 
     #endregion
 

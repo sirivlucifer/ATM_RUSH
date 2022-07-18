@@ -8,9 +8,7 @@ namespace Controllers
     {
         #region Self Variables
         #region Public Variables
-
         public CollectableManager CollectableManager;
-        public int index;
         #endregion
         #region Serialized Variables
         #endregion

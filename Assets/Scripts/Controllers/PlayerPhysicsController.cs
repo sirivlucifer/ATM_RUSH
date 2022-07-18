@@ -12,14 +12,14 @@ namespace Controllers
     {
         #region Self Variables
 
-        [SerializeField] private StackManager stackManager;
+        
         #region Public Variables
         
         #endregion
 
         #region Serialized Variables
         
-        [SerializeField] private PlayerManager playerManager;
+        
         private new Collider Collider;
 
         #endregion

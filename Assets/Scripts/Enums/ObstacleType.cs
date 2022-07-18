@@ -11,7 +11,7 @@ namespace Enums
     Guillotine,
     Card,
     Hand,
-    Wall
-    
+    Wall,
+    UpgradeGate
     }
 }
