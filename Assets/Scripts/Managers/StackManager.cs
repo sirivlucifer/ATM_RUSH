@@ -93,15 +93,22 @@ namespace Managers
         #region Stack Adding and Removing
         private void AddOnStack(GameObject other)
                 {
+                    // Collectable Manager`e at
                     other.tag = "Collected"; 
                     other.transform.parent = transform;
-                    other.transform.localPosition = new Vector3(0, 0, 5f);
+                    
+                    
+                    if (Collected.Count < 1)
+                    {
+                        other.transform.localPosition = new Vector3(0, 0, 5f);
+                    }
                     StackLerpMove();
                     CollectableScaleUp(other);
                     var lastItem = Collected.Count - 1;
-                    if (Collected.Count > 1)
+
+                    if (Collected.Count >= 1)
                     {
-                        other.transform.DOMoveZ(Collected[lastItem].transform.position.z + 1.5f, 0.1f); 
+                        other.transform.DOLocalMoveZ(Collected[lastItem].transform.localPosition.z + 4f, 1f); 
                     }
                     Collected.Add(other.gameObject);
                 }
@@ -122,7 +129,7 @@ namespace Managers
         
                        else
                        {
-                          
+                           
                            int crashedObject = self.transform.GetSiblingIndex();
                            int lastIndex = self.transform.childCount - 1;
         
