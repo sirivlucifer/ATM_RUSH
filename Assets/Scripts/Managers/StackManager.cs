@@ -55,7 +55,7 @@ namespace Managers
             RemoveFromStack(self);
         }
 
-        private void OnDeposit(GameObject gameObject)
+        private void OnDeposit(GameObject gameObject,int instanceId)
         {
             RemoveFromStack(gameObject);
         }
@@ -71,8 +71,10 @@ namespace Managers
                             var FirstBall = Collected.ElementAt(i - 1);
                             var SectBall = Collected.ElementAt(i);
         
-                            SectBall.transform.DOMoveX(FirstBall.transform.position.x, 20 * Time.deltaTime);
-                            SectBall.transform.DOMoveZ(FirstBall.transform.position.z + 1.5f, 15 * Time.deltaTime);
+                            SectBall.transform.DOMoveX(FirstBall.transform.position.x, 20*Time.deltaTime);
+                          
+                            
+                            // alternate couroutine 
                         }
                     }
                 }
@@ -94,9 +96,14 @@ namespace Managers
                     other.tag = "Collected"; 
                     other.transform.parent = transform;
                     other.transform.localPosition = new Vector3(0, 0, 5f);
-                    Collected.Add(other.gameObject);
                     StackLerpMove();
                     CollectableScaleUp(other);
+                    var lastItem = Collected.Count - 1;
+                    if (Collected.Count > 1)
+                    {
+                        other.transform.DOMoveZ(Collected[lastItem].transform.position.z + 1.5f, 0.1f); 
+                    }
+                    Collected.Add(other.gameObject);
                 }
                 private void RemoveFromStack(GameObject self) 
                 {
@@ -108,11 +115,14 @@ namespace Managers
                         {
                             Collected.Remove(self);
                             Destroy(self);
+                            Collected.TrimExcess(); 
+                            
+                          // her seviye değiştiğinde trimexcess kullan !
                        }
         
                        else
                        {
-                           
+                          
                            int crashedObject = self.transform.GetSiblingIndex();
                            int lastIndex = self.transform.childCount - 1;
         

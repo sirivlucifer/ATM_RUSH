@@ -1,3 +1,4 @@
+using System;
 using Controllers;
 using DG.Tweening;
 using Signals;
@@ -10,6 +11,13 @@ namespace Managers
         public AtmScoreController atmScoreController;
         public int atmId;
         public Collider Collider;
+        private int instanceId;
+
+        private void Awake()
+        {
+            instanceId = GetComponent<AtmManager>().GetInstanceID();
+        }
+
         private void OnEnable()
         {
             SubscribeEvents();
@@ -29,21 +37,27 @@ namespace Managers
         {
             UnsubscribeEvents();
         } 
-        void OnDeposit(GameObject gameObject)
+        void OnDeposit(GameObject gameObject, int InstanceID)
         {
-            AtmMoveDown(gameObject);
+            
+            AtmMoveDown(gameObject,InstanceID);
+            
+               
         }
 
-        void AtmMoveDown(GameObject gameObject) {
-             
-             if (gameObject.CompareTag("Player"))
-             {
-                 transform.DOMoveY(-2.5f, 2f);
-             }
+        void AtmMoveDown(GameObject gameObject,int InstanceID) {
+
+            if (InstanceID == instanceId)
+            {
+                 if (gameObject.CompareTag("Player"))
+                 {
+                     transform.DOMoveY(-3f, 2f).SetEase(Ease.OutBounce);
+                }
+                 atmScoreController.OnDeposit(gameObject);
+            }
             
-             atmScoreController.OnDeposit(gameObject);
-           
-         }
+            
+        }
     }
 }
 

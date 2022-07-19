@@ -41,17 +41,14 @@ namespace Managers
         {
             UnsubscribeEvents(); 
         }
-
-        private void Update()
-        { 
-            scoreText.text = _score.ToString();
-        }
-
+        
         private void OnScoreUp(GameObject self)
         {
             if (self.CompareTag("Collected"))
             {
+                
                  _score += 1;
+                 scoreText.text = _score.ToString();
             }
            
         }
@@ -64,7 +61,9 @@ namespace Managers
                 if (_score <= 0)
                 {
                     _score = 0;
+                    
                 }
+                scoreText.text = _score.ToString();
             }
         }
     }
