@@ -46,17 +46,17 @@ namespace Managers
         }
 
         void AtmMoveDown(GameObject gameObject,int InstanceID) {
-
+           
+            atmScoreController.OnDeposit(gameObject);
+           
             if (InstanceID == instanceId)
             {
                  if (gameObject.CompareTag("Player"))
                  {
                      transform.DOMoveY(-3f, 2f).SetEase(Ease.OutBounce);
                 }
-                 atmScoreController.OnDeposit(gameObject);
+                 
             }
-            
-            
         }
     }
 }
