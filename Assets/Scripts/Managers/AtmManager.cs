@@ -29,7 +29,7 @@ namespace Managers
         } 
         void OnDeposit(GameObject gameObject)
         {
-            Debug.Log("Yes");
+           // Debug.Log("Yes");
             atmScoreController.OnDeposit(gameObject);
             if (gameObject.CompareTag("Player"))
             {

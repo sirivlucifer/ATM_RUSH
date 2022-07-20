@@ -7,7 +7,7 @@ namespace Data.ValueObject
     public class InputData
     {
         public float HorizontalInputSpeed = 2f;
-        public Vector2 ClampSides = new Vector2(-3, 3);
+        public Vector2 ClampSides = new Vector2(-4, 4);
         public float ClampSpeed = 0.007f;
     }
 }
